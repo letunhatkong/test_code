@@ -1,0 +1,159 @@
+
+// top container
+.schedule-top-container {
+  position: relative;
+  width: 100%;
+  margin-top: 68px;
+}
+.banner-img-sche {
+  position: relative;
+  width: 100%;
+  height: 298px;
+}
+.banner-img-sche > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+.schedule-top-container .body_fixAbsoluted {
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 155px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.schedule-top-container .body_fixAbsoluted p {
+  margin: 0;
+  text-align: center;
+}
+.sche-tit {
+  font-size: 36px;
+}
+
+.sche-search {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  margin: 40px 0 0 0;
+}
+.sche-search-date{
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+.sche-search-tim{
+  width: 92px;
+  height: 100%;
+  background: #333333;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;   
+  
+}
+@media only screen and (max-width: 1189px){
+  .schedule-top-container {
+    margin-top: 80px;
+  }
+}
+// # top container
+
+
+// bot container
+.schedule-bot-container {
+  position: relative;
+  width: 100%;
+  margin-top: 200px;
+  font-size: 14px;
+  margin: 0;
+}
+.schedule-bot-container .fix-padTop {
+  padding-top: 0 ;
+}
+
+.sche-bot-header {
+  height: 48px;
+  position: relative;
+}
+.sche-bot-header > span {
+  color: #d72428;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 16px;
+}
+.icon-sche {
+  background: url(/images/icon/iconSche.png) no-repeat center;
+  width: 36px;
+  height: 36px;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border: 1px solid silver;
+  margin: auto 0 auto auto;
+}
+
+.sche-ul_ {
+  list-style: none;
+  width: 100%;
+  position: relative;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.sche-ul_ li:first-child {
+  background: #f4f4f4;
+}
+.sche-ul_ li {
+  border-bottom: 1px solid #dcdcdc;
+  width: 100%;
+  position: relative;
+}
+.sche-ul_ li div {
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//  margin: 10px auto;
+}
+.sche-ul_ .block1 {
+//  margin-left: 20px;
+  position: absolute;
+  top: 7px;
+  left: 20px;
+}
+.sche-ul_ .block2 {
+//  margin-left: 135px;
+  width: auto;
+  max-width: 100%;
+  position: relative;
+  top: 0;
+  padding: 7px 0 7px 135px;
+}
+
+@media only screen and (max-width: 400px) {
+  .sche-ul_ .block2 {
+    padding: 7px 0 7px 96px;
+  }
+}

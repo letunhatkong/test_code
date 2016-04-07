@@ -1,0 +1,78 @@
+<html>
+<head>	
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	
+	<link href="bootstrap.min.css" rel="stylesheet">
+
+	<style type="text/css">
+		body { 
+			width: 1000px;
+			margin: 0 auto;
+		}
+	
+		
+		ul.nav {
+			position: relative;			
+			margin: 0;
+			padding: 0;
+			width: 900px;		
+			height: 80px;		
+			list-style: none;				
+		}
+		ul.nav .dropdown {
+			height: 80px;
+			line-height: 80px;
+			padding: 0;
+			font-size: 16px;
+			border: 1px solid black;
+			color: black;
+			width: 200px;
+			float: left;		
+		}
+
+		
+
+	</style>
+
+</head>
+
+<body>
+
+
+	 <ul class="nav nav-collapse">           
+        <li class="dropdown">   
+         	<a id="drop1" role="button" data-toggle="dropdown" href="#">adasfdf 1</a>  
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">                
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                    	asdasd
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                    	asdasd 2
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                    	asdasd 3
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                    	asdasd 5
+                    </a>
+                </li>            
+            </ul>        
+        </li>    
+        <li class="dropdown"> <a id="drop2" href="#">aasdad 2</a> </li> 
+        <li class="dropdown"> <a id="drop3" href="#">aasdad 3</a> </li> 
+    </ul>
+
+	<script> $('.dropdown-toggle').dropdown()</script>
+
+</body>
+
+</html>

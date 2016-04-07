@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9;">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<script type="text/javascript"  src="jquery-1.11.1.min.js"></script>
+	 <script type="text/javascript" src="jquery.marquee.min.js"></script>
+
+    <style type="text/css">
+        ul { width: 9999px }
+        ul li { 
+            float: left;
+            margin: 0 20px 0 0;
+            list-style-position: inside;
+            white-space: nowrap;
+        }      
+        ul li { color: black; } 
+        ul a:hover > li { color: red }
+    </style>
+</head>
+
+<body>
+
+
+<div class="maa">
+    <ul class="sd">
+   <a href="#"><li>START Lorem ipsum dolor sit amet END</li></a>
+   <a href="#"><li>START Lorem ipsum dolor sit amet END</li></a>
+   <a href="#"><li>START Lorem ipsum dolor sit amet END</li></a>
+   <a href="#"><li>START Lorem ipsum dolor sit amet END</li></a>
+   <a href="#"><li>START Lorem ipsum dolor sit amet END</li></a>
+</ul>
+  
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.maa').marquee({
+            pauseOnHover: true,
+            duration: 20000,
+            direction: 'left', 
+            allowCss3Support: true
+        });
+    })
+
+// * If you wish to always animate using jQuery
+// allowCss3Support: true,
+// * works when allowCss3Support is set to true 
+// css3easing: 'linear',
+// * requires jQuery easing plugin. Default is 'linear'
+// easing: 'linear',
+// * pause time before the next animation turn in milliseconds
+// delayBeforeStart: 1000,
+// * 'left', 'right', 'up' or 'down'
+// direction: 'left',
+// * true or false - should the marquee be duplicated to show an effect of continues flow
+// duplicated: false,
+// *speed in milliseconds of the marquee in milliseconds
+// duration: 5000,
+// * gap in pixels between the tickers
+// gap: 20,
+// * on cycle pause the marquee
+// pauseOnCycle: false,
+// * on hover pause the marquee - using jQuery plugin https://github.com/tobia/Pause
+// pauseOnHover: false
+
+</script>
+
+
+
+
+ </body> 
+ 
+
+</html>

@@ -1,0 +1,136 @@
+/*---------------------------- Thumbnails ----------------------------*/
+#thumbnail-slider {
+    float: right;
+    height:645px;
+    display:inline-block;
+    padding: 35px 0; /*Increse its value if want to move the arrows out of the div.inner */
+    position:relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#thumbnail-slider div.inner {
+    border-radius:3px;
+    padding:0;
+
+    /*the followings should not be changed */
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+#thumbnail-slider div.inner ul {
+    /*the followings should not be changed */
+    position:relative;
+    left:0; top:0;
+    list-style:none;
+    font-size:0;
+    padding:0;
+    margin:0;
+    float:left!important;
+    width:auto!important;
+    height:auto!important;
+}
+
+#thumbnail-slider ul li {
+    opacity:1;
+    display:block;
+    margin:4px 0; /* Spacing between thumbs*/
+
+    /*transition:all 0.5s;*/
+
+    text-align:center;
+    padding:0;
+    position:relative;
+    list-style:none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    backface-visibility:hidden;
+}
+
+#thumbnail-slider ul li.active {
+    border: 2px solid #000;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+#thumbnail-slider li:hover {
+
+}
+
+#thumbnail-slider .thumb {
+    width:100%;
+    height: 100%;
+    background-size:contain;
+    background: no-repeat center center;
+    display:block;
+    position:absolute;
+    font-size:0;
+}
+
+/* --------- navigation controls ------- */
+/* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */
+
+#thumbnail-slider-pause-play {display:none;} /*.pause*/
+
+#thumbnail-slider-prev, #thumbnail-slider-next
+{
+    position: absolute;
+    background-color:#fff;
+    width:100%;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    margin:0;
+    color:white;
+    z-index:10;
+    cursor:pointer;
+    transition:opacity 0.6s;
+    *background-color:#fff;/*IE7 hack*/
+    backface-visibility:hidden;
+}
+
+#thumbnail-slider-prev {
+    top:0;
+}
+
+#thumbnail-slider-next {
+    bottom:0;
+}
+#thumbnail-slider-next.disabled, #thumbnail-slider-prev.disabled {
+    /*opacity:0.1;*/
+    /*cursor:default;*/
+}
+
+
+/* arrows */
+#thumbnail-slider-prev::before, #thumbnail-slider-next::before {
+    position:absolute;
+    content: "";
+    display: inline-block;
+}
+
+#thumbnail-slider-prev::before {
+    background: url(nextRelated.png) no-repeat 50% 0;
+    width: 100%;
+    height: 30px;
+    top: 0; left: 0;
+}
+
+#thumbnail-slider-next::before {
+    background: url(prevRelated.png) no-repeat 50% 0;
+    width: 100%;
+    height: 30px;
+    bottom: 0; left: 0;
+}

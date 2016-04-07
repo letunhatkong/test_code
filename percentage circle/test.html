@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9;">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<script src="jquery-1.11.1.min.js"></script>
+  
+ 
+ 	<!-- <link rel="stylesheet" type="text/css" href="css/main.css" media="screen"> -->
+  	
+  	<style type="text/css">
+	  	body {
+			margin: 50px;
+		}
+
+		.radial-progress {	
+
+			width:  120px;
+			height: 120px;
+
+			background-color: silver;
+			border-radius: 50%;
+		}
+		.circle .mask, .circle .fill {
+			width: 120px;
+			height: 120px;
+			position: absolute;
+
+			border-radius: 50%;
+
+			transition: -webkit-transform 1s;
+			transition: -ms-transform 1s;
+			transition: transform 1s;
+			-webkit-backface-visibility: hidden;
+		}
+		.circle .mask {
+			clip: rect(0px, 120px, 120px, 60px);
+		}
+					
+		.circle .fill {
+			clip: rect(0px, 60px, 120px, 0px);
+			background-color: green;		
+		}
+
+		.percentage-text {
+			text-align: center;
+			line-height: 120px;
+			position: absolute;
+			width: 100%;
+		}
+
+		</style> 	
+
+</head>
+
+
+
+<body>
+
+	<div class="radial-progress">
+		<div class="circle">
+			<div class="mask full">
+				<div class="fill"></div>
+			</div>
+			<div class="mask half">
+				<div class="fill"></div>
+				<div class="fill fix"></div>
+			</div>			
+		</div>
+		<div class="percentage-text"></div>
+	</div>
+
+
+	<script type="text/javascript">		
+		var transform_styles = ['-webkit-transform', '-ms-transform', 'transform'];
+		var per_circle = function() {
+		    var per = 25;		    
+			var rotation = per*180/100;
+			var fill_rotation = rotation;
+			var fix_rotation = rotation * 2;
+			$('.radial-progress .percentage-text').html(per+'%');
+			for(i in transform_styles) {
+				$('.circle .fill, .circle .mask.full').css(transform_styles[i], 'rotate(' + fill_rotation + 'deg)');
+				$('.circle .fill.fix').css(transform_styles[i], 'rotate(' + fix_rotation + 'deg)');
+			}
+		}
+
+		// setTimeout(per_circle, 100);
+		per_circle();
+
+	</script>
+	
+</body>
+
+
+
+</html>

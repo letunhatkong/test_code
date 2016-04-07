@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>  
+ 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script src="jquery-1.11.1.min.js"></script>
+  <script src="carousel.js"></script>  
+ 
+  <link rel="stylesheet" type="text/css" href="carousel.css">
+    
+  <style type="text/css">
+   
+    @import "compass";
+    @import "mixins";
+
+    #chuyenmuc { 
+      overflow: hidden;
+    }
+    #chuyenmuc p { color: black; margin: 0}
+    .section {
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }
+    .sectionName {
+        margin: 0 0 5px 0;
+        font-size: 25px;        
+    } 
+    
+    #lay30 { background: red; height: 40em;}
+    #lay70 { background: white; padding-bottom: 20em;}
+    .columns-70-30 {
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: aqua;
+    }
+
+    .columns-70-30 ._layout_70 {
+        width: 765px;
+        margin: 0;
+        float: left;
+    }
+    .columns-70-30 ._layout_30 {
+        width: 375px;
+        margin: 0;
+        float: right;
+    }
+
+    @media only screen and (max-width:1189px) and (min-width:768px) {
+        .columns-70-30 {
+            width: auto;
+            max-width: 100%;
+            padding: 0 40px;
+        }
+
+        .columns-70-30 ._layout_70,
+        .columns-70-30 ._layout_30  {
+            width: 100%;
+        }
+
+    }
+
+    @media only screen and (max-width: 767px) {
+        .columns-70-30 {
+            width: auto;
+            max-width: 100%;
+            padding: 0 16px;
+        }
+
+        .columns-70-30 ._layout_70,
+        .columns-70-30 ._layout_30  {
+            width: 100%;
+        }
+
+    }
+    
+  </style>
+</head>
+
+
+
+<body>  
+
+<div class="columns-70-30">
+<div class="_layout_70" id="lay70">
+
+  <div id="chuyenmuc">
+
+  <div class="section">
+    <p class="sectionName">Bản Tin Thời Sự ĐN</p>
+  </div>
+
+  <div class="inside top-features">
+     <!--  <h4 class="hed-section">Columnists</h4> -->
+      <div class="content" data-carousel="standard"> 
+      
+        <div class="feat-thumb">
+          <a href="" class="element columnist">
+            <img src="1.jpg"> 
+          </a>
+           <p class="sum_69">Lorem ipsum dolor sit amet, onsectetuer adippiscing elit</p>
+           <p>Sun, 29 Jun 8:40 PM<span style="float: right; text-align:right">1:42</span></p>
+        </div>
+        
+        <div class="feat-thumb">
+          <a href="" class="element columnist">
+            <img src="2.png"> 
+          </a>
+           <p class="sum_69">Lorem ipsum dolor sit amet, onsectetuer adippiscing elit</p>
+           <p>Sun, 29 Jun 8:40 PM<span style="float: right; text-align:right">1:42</span></p>
+        </div>
+
+        <div class="feat-thumb">
+          <a href="" class="element columnist">
+            <img src="3.png"> 
+          </a>
+           <p class="sum_69">Lorem ipsum dolor sit amet, onsectetuer adippiscing elit</p>
+           <p>Sun, 29 Jun 8:40 PM<span style="float: right; text-align:right">1:42</span></p>
+        </div>
+
+        <div class="feat-thumb">
+          <a href="" class="element columnist">
+            <img src="4.jpg"> 
+          </a>
+           <p class="sum_69">Lorem ipsum dolor sit amet, onsectetuer adippiscing elit</p>
+           <p>Sun, 29 Jun 8:40 PM<span style="float: right; text-align:right">1:42</span></p>
+        </div>
+
+        <div class="feat-thumb">
+          <a href="" class="element columnist">
+            <img src="5.jpg"> 
+          </a>
+           <p class="sum_69">Lorem ipsum dolor sit amet, onsectetuer adippiscing elit</p>
+           <p >Sun, 29 Jun 8:40 PM<span style="float: right; text-align:right">1:42</span></p>
+        </div>
+
+        <div class="feat-thumb">
+          <a href="" class="element columnist">
+            <img src="6.jpg"> 
+          </a>
+           <p class="sum_69">Lorem ipsum dolor sit amet, onsectetuer adippiscing elit</p>
+           <p>Sun, 29 Jun 8:40 PM<span style="float: right; text-align:right">1:42</span></p>
+        </div>
+
+        <div class="feat-thumb">
+          <a href="" class="element columnist">
+            <img src="7.jpg"> 
+          </a>
+           <p class="sum_69">Lorem ipsum dolor sit amet, onsectetuer adippiscing elit</p>
+           <p>Sun, 29 Jun 8:40 PM<span style="float: right; text-align:right">1:42</span></p>
+        </div>
+
+        <div class="feat-thumb">
+          <a href="" class="element columnist">
+            <img src="8.jpg"> 
+          </a>
+           <p  class="sum_69">Lorem ipsum dolor sit amet, onsectetuer adippiscing elit</p>
+           <p>Sun, 29 Jun 8:40 PM<span style="float: right; text-align:right">1:42</span></p>
+        </div>
+
+        <div class="feat-thumb">
+          <a href="" class="element columnist">
+            <img src="9.jpg"> 
+          </a>
+           <p  class="sum_69">Lorem ipsum dolor sit amet, onsectetuer adippiscing elit</p>
+           <p>Sun, 29 Jun 8:40 PM<span style="float: right; text-align:right">1:42</span></p>
+        </div>
+    </div>
+  </div>
+  <!-- inside -->
+
+  </div>
+  <!-- #Chuyen muc -->
+
+</div>
+<!-- lay1 -->
+
+<div class="_layout_30" id="lay30"></div>
+</div>
+<!-- layout -->
+    
+
+</body>
+
+
+</html>

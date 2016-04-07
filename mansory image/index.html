@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+  <!-- <link rel="stylesheet" type="text/css" href="css/imagegallery.css" media="screen"> -->
+  
+
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+
+  <style type="text/css">  	
+	.wrap-resp {
+	  position: relative;
+	  width: 1140px;
+	  margin: 0 auto;
+	  padding: 0;
+	}
+	@media only screen and (max-width: 1200px) {
+		.wrap-resp {  width: 100%;
+  			padding: 0 20px; 
+  		}  		
+	}
+	@media only screen and (max-width: 767px) {
+		.wrap-resp {  width: 100%;
+  			padding: 0 15px; 
+  		}
+
+	}
+	
+	.img-resp { position: relative; }
+  	.img92 {	padding-bottom: 92%; background: red }
+	.img180 {	padding-bottom: 180%; background: yellow }
+	.img100 {	padding-bottom: 100%; background: blue }
+	.img200 {	padding-bottom: 200%; background: green }
+  </style>
+</head>
+
+
+
+<body style="width: 100%; margin:0; padding:0">
+<div class="wrap-resp">
+	<div class="row">		
+
+	<!-- <div class="image-detail"> -->
+		<ul id="masonry-loop" class="" >
+			<li class="ma-item" >
+				<div class="img-resp img180">	</div>
+			</li>	
+			<li class="ma-item" >
+				<div class="img-resp"></div>
+			</li>	
+		</ul>
+
+<!-- 	</div> -->
+
+
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	
+	
+	jQuery(document).ready(function(){
+
+		var $container = jQuery('#masonry-loop');
+		var number;
+		// initialize Isotope
+		if($container.width() < 5000 && $container.width()>992){
+			number=3;
+		}
+		if($container.width() > 460 && $container.width() < 992){
+			number=2;
+		}
+		if($container.width() < 460){
+			number=1;
+		}
+	
+	    var container1 = document.querySelector('#masonry-loop');
+	    //create empty var msnry
+	    var msnry;
+	    // initialize Masonry after all images have loaded
+	    imagesLoaded( container1, function() {
+	        msnry = new Masonry( container1, {
+	            itemSelector:'.ma-item',
+				columnWidth:$container.width()/number
+	        });
+	    });
+ 	});
+</script>
+
+
+
+</body>
+
+</html>

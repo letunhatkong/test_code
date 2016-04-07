@@ -1,0 +1,214 @@
+/* Carousels */
+.sum_69 {
+    color: #696969 !important;
+}
+.ie7 .secslider {
+    zoom: 1;
+}
+
+.ie6 .feat-thumb img {
+    width: 85%;
+}
+
+
+.top-features {
+    clear: both;
+    position: relative;
+}
+.top-features .content {
+    float: left;
+    width: 100%;
+    margin-top: 10px !important;
+}
+.top-features .feat-thumb{
+    clear: left;
+    float: left;
+    width: 50%;
+}
+
+.top-features .feat-thumb.column-right {
+    width: 50%;
+}
+.top-features .feat-even {
+    background: none;
+    float: right;  
+    clear: right;
+}
+.top-features .content .element {
+    display: block;
+    margin: 0 auto 10px auto;
+    position: relative;
+    width: 100%;
+    padding-bottom: 66.6667%;
+    background: black;
+    overflow: hidden;
+}
+
+.aui .slider .span3 p.news-hover {
+    margin-top: 12px;
+}
+
+
+.inside .hed-section {
+    border-top: 1px solid #c0c0c0;
+}
+
+.nav a.disabled {
+    cursor: default;
+}
+.inside .nav {
+    position: absolute;
+    z-index: 2;
+    top: -39px;
+    right: 1px;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.inside .nav li {
+    float: left;  
+}
+.inside .nav li a {
+    height: 25px;
+    line-height: 25px;
+    text-decoration: none;
+    color: black;
+}
+/*.inside .nav li a.prev:hover { background-position: -25px 0 !important;}*/
+/*.inside .nav li a.next:hover { background-position: -75px 0 !important;}*/
+
+/*.frontpage-preview .header a.prev,
+.frontpage-preview .header a.next,
+a.next,
+a.prev,
+.ui-datepicker-prev {
+    background: url(../images/L.png) no-repeat 50% 6px;
+    display: block;   
+    height: 32px;
+    width: 32px;
+    color: black;
+}*/
+
+/*a.next:hover,
+a.next:focus,
+a.prev:hover,
+a.prev:focus {
+    background-position: 50% -94px;
+}*/
+
+/*.frontpage-preview .header a.next,
+a.next {
+    background-image: url(../images/R.png);
+}*/
+
+a.disabled {
+    background-position: 50% 6px;
+    cursor: default;    
+}
+
+.slidewrap {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.slidewrap .slider {
+    float: left;
+    margin-left: 0;
+    -webkit-transition: margin-left 0.5s ease;
+    -moz-transition: margin-left 0.5s ease;
+    -ms-transition: margin-left 0.5s ease;
+    -o-transition: margin-left 0.5s ease;
+    transition: margin-left 0.5s ease;
+}
+.slidewrap .slide {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+/*.inside .hed-section {
+    border: 1px solid #c0c0c0;
+    border-width: 1px 0;
+    clear: both; 
+    padding: 10px 0;
+    color:#1376bc;
+    margin-top: 0 !important;
+}*/
+
+.inside .hed-section .element {
+    text-decoration: none;
+}
+
+.inside .hed-section .element:after {
+    display: inline-block;
+    height: 1em;
+    width: 1.5em;
+    content: "\00A0";
+}
+
+
+.story-title {
+    letter-spacing: -0.05em; 
+    margin-left:10px !important;
+    margin-right: 10px !important;
+}
+
+.feat-thumb {
+    display: block;
+    text-align: left;    
+}
+.feat-thumb .story-title {
+    color:#585858;
+    letter-spacing: normal;
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-size: 17px;
+    margin-bottom: 0;
+}
+.feat-thumb img {    
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;  
+}
+.top-features .feat-thumb {
+    width: 23.5%;
+    padding-right: 2%;
+}
+.top-features .feat-thumb,
+.top-features .feat-even {      
+    clear: none;
+    float: left;     
+    display: block;    
+}   
+.top-features .last-feat { padding-right: 0;}
+
+
+@media only screen and (max-width:1189px) and (min-width:768px) {
+    .top-features .feat-thumb { 
+        width: 48%;
+        padding: 0 2% 12px 0;
+    }
+    .top-features .feat-even { 
+        width: 48%;
+        padding-right: 0;
+        padding-left: 2%;
+    } 
+}
+
+@media only screen and (max-width:767px) {
+    .top-features .feat-thumb { 
+        width: 100%;
+        padding: 0 0 12px 0;
+    }   
+    .top-features .content .element {       
+        max-width: 100%;
+    }
+      
+
+}
+
+/* # Carousel */

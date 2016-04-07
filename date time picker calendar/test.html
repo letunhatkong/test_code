@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9;">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="bootstrap-datetimepicker.min.js"></script>  
+ 
+ 	<link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker.min.css">
+  	<link rel="stylesheet" type="text/css" href="lichphatsong.less">
+  	<style type="text/css">
+  		body {
+  			width: 1170px;
+  			margin: 0 auto;
+  			padding: 0;
+  			background: aqua;
+  		}
+
+  		.icon-calendar {
+  			background: url(calendar.png) no-repeat center;
+  		}
+  		[class^="icon-"], [class*=" icon-"] {
+display: inline-block;
+width: 14px;
+height: 14px;
+margin-top: 1px;
+line-height: 14px;
+vertical-align: text-top;
+background-image: url(calendar.png) ;
+background-position: 14px 14px;
+background-repeat: no-repeat;
+}
+  		
+
+  	</style>
+
+</head>
+
+
+
+<body>
+
+	<div class="sche-search">
+            <div class="sche-search-date">
+            
+					<div id="datetimepicker4" class="input-append">	    
+					    <span class="add-on icon-calendar">
+					      <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+					    </span>
+					    <input data-format="dd-MM-yyyy" type="text"></input>
+					</div>
+
+					<script type="text/javascript">
+					  $(function() {
+					    $('#datetimepicker4').datetimepicker({
+					      pickTime: false
+					    });
+					  });
+					</script>
+								
+            </div>
+            <!-- # search-date -->
+           
+      
+
+            <div class="sche-search-tim">Tìm</div>
+        </div>
+
+	
+	
+</body>
+
+</html>
