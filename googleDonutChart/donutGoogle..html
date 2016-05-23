@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script type="text/javascript" src="loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', "asd"],
+          ['Work', 90],
+          ['Eat',  45],
+          ['ngu', 45]
+        ]);
+
+        var options = {
+          backgroundColor: 'transparent',         
+          fontSize: 16,
+          pieHole: 0.4,
+          pieSliceText: 'label',
+          pieSliceTextStyle: {
+            color: '#fff'
+          },
+           slices: {
+            0: { color: '#575F1C' },
+            1: { color: '#53563A' },
+            2: { color: '#2A4A24'}
+          },          
+          is3D:false,
+          legend: 'none',
+          'tooltip' : {
+            trigger: 'none'
+          },
+          enableInteractivity: false       
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <style type="text/css">
+    	#donutchart {
+    		background: url(a.jpg) no-repeat; 
+    	}
+      	#donutchart g:hover > path { 
+	        fill: transparent; 
+      	}
+    </style>
+  </head>
+
+  <body style="background: #777;">
+    <div id="donutchart" style="width: 400px; height: 400px;"></div>
+  </body>
+</html>
