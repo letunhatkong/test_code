@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Get Data</title>
+	<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+	<script type="text/javascript" src="instafeed.min.js"></script>
+</head>
+
+
+<body>
+
+<div id="instafeed"></div>
+
+<script type="text/javascript">
+ 	var userFeed = new Instafeed({
+        get: 'user',
+        userId: '3309870573',
+        accessToken: '3309870573.98164b1.d872979b5c61476ea4994fcd5d316ea5',
+        sortBy: 'most-recent',
+        success: function(data) {
+        	console.log(data);
+        }
+    });
+   	userFeed.run();
+</script>
+
+</body>
+
+
+</html>
