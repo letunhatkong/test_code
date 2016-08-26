@@ -1,18 +1,21 @@
 <html>
 <head>	
 	<meta charset="utf-8">
+
+	<link href="bootstrap.min.css" rel="stylesheet">
+
 	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="bootstrap.min.js"></script>
-	
-	<link href="bootstrap.min.css" rel="stylesheet">
+
+
 
 	<style type="text/css">
 		body { 
 			width: 1000px;
 			margin: 0 auto;
 		}
-	
-		
+
+
 		ul.nav {
 			position: relative;			
 			margin: 0;
@@ -32,7 +35,7 @@
 			float: left;		
 		}
 
-		
+
 
 	</style>
 
@@ -41,37 +44,84 @@
 <body>
 
 
-	 <ul class="nav nav-collapse">           
-        <li class="dropdown">   
-         	<a id="drop1" role="button" data-toggle="dropdown" href="#">adasfdf 1</a>  
-            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">                
-                <li role="presentation">
-                    <a role="menuitem" tabindex="-1" href="#">
-                    	asdasd
-                    </a>
-                </li>
-                <li role="presentation">
-                    <a role="menuitem" tabindex="-1" href="#">
-                    	asdasd 2
-                    </a>
-                </li>
-                <li role="presentation">
-                    <a role="menuitem" tabindex="-1" href="#">
-                    	asdasd 3
-                    </a>
-                </li>
-                <li role="presentation">
-                    <a role="menuitem" tabindex="-1" href="#">
-                    	asdasd 5
-                    </a>
-                </li>            
-            </ul>        
-        </li>    
-        <li class="dropdown"> <a id="drop2" href="#">aasdad 2</a> </li> 
-        <li class="dropdown"> <a id="drop3" href="#">aasdad 3</a> </li> 
-    </ul>
+	<ul class="nav nav-collapse">           
+		<li class="dropdown">   
+			<a id="drop1" data-toggle="dropdown" href="#">adasfdf 1</a>  
+			<ul class="dropdown-menu" aria-labelledby="drop1">                
+				<li >
+					<a  href="#">
+						asdasd
+					</a>
+				</li>
+				<li >
+					<a  href="#">
+						asdasd 2
+					</a>
+				</li>
+				<li >
+					<a  href="#">
+						asdasd 3
+					</a>
+				</li>
+				<li >
+					<a  href="#">
+						asdasd 5
+					</a>
+				</li>            
+			</ul>        
+		</li>    
+		<li class="dropdown"> 
+			<a id="drop2" data-toggle="dropdown" href="#">aasdad 2</a> 
+			<ul class="dropdown-menu"  aria-labelledby="drop2">                
+				<li >
+					<a   href="#">
+						asdasd
+					</a>
+				</li>
+				<li >
+					<a   href="#">
+						asdasd 2
+					</a>
+				</li>
+				<li >
+					<a   href="#">
+						asdasd 3
+					</a>
+				</li>
+				<li >
+					<a   href="#">
+						asdasd 5
+					</a>
+				</li>            
+			</ul>        
+		</li> 
+		<li class="dropdown"> 
+			<a id="drop3" data-toggle="dropdown" href="#">aasdad 3</a> 
+			<ul class="dropdown-menu"  aria-labelledby="drop3">                
+				<li >
+					<a   href="#">
+						asdasd
+					</a>
+				</li>
+				<li >
+					<a   href="#">
+						asdasd 2
+					</a>
+				</li>
+				<li >
+					<a   href="#">
+						asdasd 3
+					</a>
+				</li>
+				<li >
+					<a   href="#">
+						asdasd 5
+					</a>
+				</li>            
+			</ul>        
+		</li> 
+	</ul>
 
-	<script> $('.dropdown-toggle').dropdown()</script>
 
 </body>
 
