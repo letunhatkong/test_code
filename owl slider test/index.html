@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>  
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="owl/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="owl/owl.transitions.css">
+
+  <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="owl/owl.carousel.min.js"></script>
+
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    .wrap {
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    /* slider */
+    #owlSlider .item{
+      margin: 3px;
+    }
+    #owlSlider .item img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .owl-prev {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -0px;
+      background: red;
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+    .owl-next {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -0px;
+      background: red;
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+
+  </style>   
+
+</head>
+
+
+
+<body>  
+  <div class="wrap">
+
+    <div id="owlSlider" class="owl-carousel">
+      <div class="item"><div><img class="lazyOwl2" src="img/1.jpg" /></div></div>
+      <div class="item"><div><img class="lazyOwl2" src="img/2.jpg" /></div></div>
+      <div class="item"><div><img class="lazyOwl2" src="img/3.jpg" /></div></div>
+      <div class="item"><div><img class="lazyOwl2" src="img/4.jpg" /></div></div>
+      <div class="item"><div><img class="lazyOwl2" src="img/5.jpg" /></div></div>
+      <div class="item"><div><img class="lazyOwl2" src="img/6.jpg" /></div></div>
+      <div class="item"><div><img class="lazyOwl2" src="img/7.jpg" /></div></div>
+      <div class="item"><div><img class="lazyOwl2" src="img/8.jpg" /></div></div>
+      <div class="item"><div><img class="lazyOwl2" src="img/9.jpg" /></div></div>
+      <div class="item"><div><img class="lazyOwl2" src="img/10.jpg" /></div></div>
+      <div class="item"><div><img class="lazyOwl2" src="img/11.jpg" /></div></div>
+      <div class="item"><div><img class="lazyOwl2" src="img/12.jpg" /></div></div>
+      <div class="item"><div><img class="lazyOwl2" src="img/13.jpg" /></div></div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function() {     
+      $("#owlSlider").owlCarousel({
+        itemsCustom : [
+        [0, 2],
+        [450, 4],
+        [768, 8]
+        ],
+        // autoPlay : 3000,
+        navigation : true,
+        // pagination: true, // default true
+        itemsScaleUp:true,
+        // transitionStyle: "goDown", // fade, backSlide, goDown, fadeUp
+        // lazyLoad : false, 
+        // singleItem: true, // full page
+        // slideSpeed : 200, // default 200
+      });
+    });
+  </script>
+
+
+</body>
+
+
+</html>
