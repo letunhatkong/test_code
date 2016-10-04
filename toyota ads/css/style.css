@@ -1,0 +1,226 @@
+body{
+	width:300px;
+	height:600px;
+	position:relative;
+	margin: 0
+}
+
+
+.learn_more{
+    z-index: 100;
+    position: absolute;
+    width: 132px;
+    height: 35px;
+    bottom: 8px;
+    left: 14px;
+}
+.logo{
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    width: 140px;
+    height: 40px;
+    z-index: 100;
+}
+
+/* step 1 */
+#bg1{
+	position:absolute;
+	width:300px;
+	height:600px;
+	background: url(../images/1.png) no-repeat;
+	-webkit-animation-duration: 0s;
+	animation-duration: 0s;
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+#takeon_text {
+    width: 100%;
+    height: 150px;
+    margin-top: 190px;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+/* # step 1*/
+
+/* step 2 */
+#bg2 {
+	position:absolute;
+	width:300px;
+	height:600px;
+	background: url(../images/2.png) no-repeat;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+/* # step 2*/
+
+/*step 3*/
+#bg3 {
+	position:absolute;
+	width:300px;
+	height:600px;
+	background: url(../images/3.png) no-repeat;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
+}
+#kwang_name {
+    position: absolute;
+    width: 140px;
+    height: 30px;
+    right: 0;
+    top: 135px;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-delay: 4s;
+	animation-delay: 4s;	
+}
+/* # step 3 */
+
+/*step 4*/
+#bg4 {
+	position:absolute;
+	width:300px;
+	height:600px;
+	background: url(../images/4.png) no-repeat;
+	-webkit-animation-duration: 0s;
+	animation-duration: 0s;
+	-webkit-animation-delay: 6s;
+	animation-delay: 6s;
+}
+#howfar_text{	
+	position: absolute;
+    margin-top: 190px;
+    width: 100%;
+    height: 150px;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 6.5s;
+    animation-delay: 6.5s;
+}
+/* # step 4 */
+
+/*step 5 6 */
+#bg5 {
+	position:absolute;
+	width:300px;
+	height:600px;
+	background: url(../images/5.png) no-repeat;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-delay: 8s;
+	animation-delay: 8s;
+}
+
+#boy{
+	position:absolute;
+    top: 175px;
+    left: 0;
+	z-index: 11;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-delay: 10s;
+	animation-delay: 10s;
+}
+#boy.fadeOutLeft {
+	-webkit-animation-duration: 1s !important;
+	animation-duration: 1s !important;
+	-webkit-animation-delay: 0s !important;
+	animation-delay: 0s !important;
+}
+
+.hidden {
+	display: none;
+}
+
+#car {
+	position: absolute;
+    top: 254px;
+    right: 0;
+	z-index: 12;
+    -webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-delay: 10s;
+	animation-delay: 10s;
+}
+#rav4_text{
+	position:absolute;
+    width: 100%;
+    height: 200px;
+    left: 0;
+    top: 0;
+	z-index: 13;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 12s;
+	animation-delay: 12s;
+}
+#option_text {
+	position: absolute;
+    width: 150px;
+    height: 30px;
+    top: 425px;
+    left: 0;
+    z-index: 20;
+	-webkit-animation-duration: 0s;
+	animation-duration: 0s;
+	-webkit-animation-delay: 10s;
+	animation-delay: 10s;
+}
+/* step 5 6 */
+
+
+
+
+/* vietnam */
+.vi #learn_more {
+	background: url(../images/vi/more.png) no-repeat;
+}
+.vi #toyota_logo {
+	background: url(../images/vi/toyota.png) no-repeat;
+}
+.vi #takeon_text {
+	background: url(../images/vi/takeon.png) no-repeat;
+}
+.vi #kwang_name {
+	background: url(../images/vi/kwang.png) no-repeat;
+}
+.vi #howfar_text{	
+    background: url(../images/vi/howfar.png) no-repeat;
+}
+.vi #rav4_text {
+    background: url(../images/vi/rav4.png) no-repeat;
+}
+.vi #option_text {
+    background: url(../images/vi/option.png) no-repeat;
+}
+/* # Vietnam */
+
+/* Korean */
+.ko #learn_more {
+	background: url(../images/ko/more.png) no-repeat;
+}
+.ko #toyota_logo {
+	background: url(../images/ko/toyota.png) no-repeat;
+}
+.ko #takeon_text {
+	background: url(../images/ko/takeon.png) no-repeat;
+}
+.ko #kwang_name {
+	background: url(../images/ko/kwang.png) no-repeat;
+}
+.ko #howfar_text{	
+    background: url(../images/ko/howfar.png) no-repeat;
+}
+.ko #rav4_text {
+    background: url(../images/ko/rav4.png) no-repeat;
+}
+.ko #option_text {
+    background: url(../images/ko/option.png) no-repeat;
+}
+/* # Korean */

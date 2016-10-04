@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>banner</title>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="vi">	
+	<a href="http://www.toyota.com.vn" target="_blank">
+		<div class="animated fadeIn repeat" id="bg1" data-name="fadeIn">
+			<div class="animated zoomIn repeat" id="takeon_text" data-name="zoomIn"></div>
+		</div>
+
+		<div class="animated fadeInLeft repeat" id="bg2" data-name="fadeInLeft"></div>
+
+		<div class="animated fadeInDown repeat" id="bg3" data-name="fadeInDown">
+			<div class="animated zoomIn repeat" id="kwang_name" data-name="zoomIn"></div>
+		</div>
+
+		<div class="animated fadeIn repeat" id="bg4" data-name="fadeIn">
+			<div class="animated zoomIn repeat" id="howfar_text" data-name="zoomIn"></div>
+		</div>
+
+		<div class="animated fadeInDown repeat" id="bg5" data-name="fadeInDown">	
+			<img class="animated fadeInLeft repeat boy_fadeInLeft" id="boy" src="images/man.png" data-name="fadeInLeft">
+			<img class="animated fadeInRight repeat" id="car" src="images/car.png" data-name="fadeInRight">
+			<div class="animated zoomIn repeat" id="rav4_text" data-name="zoomIn"></div>
+			<div class="animated fadeIn repeat" id="option_text" data-name="fadeIn"></div>		
+		</div>
+
+		<div class="learn_more" id="learn_more" alt="Learn more"></div>
+		<div class="logo" id="toyota_logo" alt="Toyota"></div>
+	</a>
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// Event listen animationEnd
+			function listenAnimationEnd() {
+				$('#bg1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+					$(this).removeClass("fadeIn animated");
+				});
+				$('#takeon_text').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+					$(this).removeClass("zoomIn animated");		
+				});
+				$('#bg2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){				
+					$(this).removeClass("fadeInLeft animated");
+				});
+				$('#bg3').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+					$(this).removeClass("fadeInDown animated");
+				});
+				$('#kwang_name').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+					$(this).removeClass("zoomIn animated");		
+				});
+				$('#bg4').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){				
+					$(this).removeClass("fadeIn animated");
+				});
+				$('#howfar_text').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){				
+					$(this).removeClass("zoomIn animated");
+				});
+				$('#bg5').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){				
+					$(this).removeClass("fadeInDown animated");
+				});			
+				$('.boy_fadeInLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){				
+					$(this).removeClass("fadeInLeft animated");
+					console.log("remove fadeInLeft");
+					$(this).addClass('animated fadeOutLeft');
+					console.log("add fadeOutLeft");
+					listenFadeOutLeft();					
+				});	
+	
+				$('#car').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){				
+					$(this).removeClass("fadeInRight animated");
+				});
+				$('#rav4_text').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){				
+					$(this).removeClass("zoomIn animated");
+				});
+				$('#option_text').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){				
+					$(this).removeClass("fadeIn animated");
+				});
+			};
+
+			function listenFadeOutLeft() {
+				$('#boy.fadeOutLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){				
+					$(this).removeClass("fadeOutLeft animated").addClass("hidden");
+						console.log("remove fadeOutLeft");
+				});
+			}
+
+			// First Call
+			listenAnimationEnd();
+
+			setInterval(function(){
+				listenAnimationEnd();
+				$("#boy").removeClass("hidden");
+				$(".repeat").each(function(){
+					var effect = $(this).attr("data-name");
+					$(this).addClass(effect + ' animated');				
+				});
+			},13500);
+		});
+	</script>
+
+</body>
+</html>	
